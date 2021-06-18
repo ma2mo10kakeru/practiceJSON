@@ -7,7 +7,7 @@
 	
    <script type="text/javascript">
    function getFunc(drugdata){
-   $("div").html("患者氏名：" + drugdata[1].name + "<br>" + "ID：" + drugdata[1].id);
+   $("div").html("患者氏名：" + drugdata[1].name + "<br>" + "ID：" + drugdata[1].id + "<br>" + "drugdata[1].drug[0]");
    };
    $(function () {
 				$("button").click(function(){
@@ -19,7 +19,7 @@
    <style type="text/css">
 		<!--
 			div{
-				width:300px;
+				width:500px;
 				height:100px;
 				margin:10px;
 				border:solid 1px #666;
