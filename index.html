@@ -7,7 +7,7 @@
 	
    <script type="text/javascript">
    function getFunc(drugdata){
-   $("div").text("患者氏名：" + drugdata[1].name + '\n' + "ID：" + drugdata[1].id);
+   $("div").html("患者氏名：" + drugdata[1].name + "<br>" + "ID：" + drugdata[1].id);
    };
    $(function () {
 				$("button").click(function(){
