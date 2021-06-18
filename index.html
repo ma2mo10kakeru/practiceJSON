@@ -9,8 +9,9 @@
    function getFunc(drugdata){
    $("div").html("患者氏名：" + drugdata[1].name + "<br>" + 
 		 "ID：" + drugdata[1].id + "<br>" + 
-		 drugdata[1].drugname[0] + "："+drugdata[1].drugdose[0] + "<br>" + 
-		 drugdata[1].drugname[1] + "："+drugdata[1].drugdose[1]);
+		 drugdata[1].drugname[0] + "：" + drugdata[1].drugdose[0] + "<br>" + 
+		 drugdata[1].drugname[1] + "：" + drugdata[1].drugdose[1] + "<br>" + 
+		 drugdata[1].drugname[2] + "：" + drugdata[1].drugdose[2]);
    };
    $(function () {
 				$("button").click(function(){
