@@ -15,16 +15,15 @@
 		 "投与時刻：" + drugdata[1].time);
    };
    $(function () {
-				$("button").click(function(){
+	   $("button").click(function(){
 					$.getJSON("drugdata.json", getFunc);
 				});
-			});
-	   
-$(function () {
-				$("#kakunin").click(function(){
+	   $("#kakunin").click(function(){
 					$.getJSON("drugdata.json", kakunin1);
 				});
 			});
+	   
+
 function kakunin1(drugdata){
 	var D1,D2,D3;
 	D1 = drugdata[1].drugdose[0];
