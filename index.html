@@ -18,12 +18,13 @@
 	   $("button").click(function(){
 					$.getJSON("drugdata.json", getFunc);
 				});
-	   $("#kakunin").click(function(){
-					$.getJSON("drugdata.json", kakunin1);
-				});
 			});
 	   
-
+$(function () {
+	 $("#kakunin").click(function(){
+					$.getJSON("drugdata.json", kakunin1);
+				});
+});
 function kakunin1(drugdata){
 	var D1,D2,D3;
 	D1 = drugdata[1].drugdose[0];
