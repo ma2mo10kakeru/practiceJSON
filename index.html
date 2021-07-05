@@ -19,6 +19,23 @@
 					$.getJSON("drugdata.json", getFunc);
 				});
 			});
+	   
+$(function () {
+				$("#kakunin").click(function(){
+					$.getJSON("drugdata.json", kakunin1);
+				});
+			});
+function kakunin1(drugdata){
+	var D1,D2,D3;
+	D1 = drugdata[1].drugdose[0];
+	D2 = drugdata[1].drugdose[1];
+	D3 = drugdata[1].drugdose[2];
+    if( document.form1.drugdose1.value==D1 && document.form1.drugdose2.value==D2 && document.form1.drugdose3.value==D3 ){
+alert("正しく入力できています");
+    }else{
+alert("入力が間違っています");
+    }
+}
    </script>
 	
    <style type="text/css">
@@ -41,7 +58,7 @@
 	<label>くすり1⃣：<input type="text" id="drugdose1" placeholder="半角で入力してください" inputmode="numeric" pattern="\d*"></label><br>
 	<label>くすり2⃣：<input type="text" id="drugdose2" placeholder="半角で入力してください" inputmode="numeric" pattern="\d*"></label><br>
 	<label>くすり3⃣：<input type="text" id="drugdose3" placeholder="半角で入力してください" inputmode="numeric" pattern="\d*"></label><br>
-	<input type="button" value="確認する" onclick="kakunin1()">
+	<input type="button" value="確認する" id="kakunin">
 	</form>
 </body>
 </html>
