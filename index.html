@@ -15,12 +15,11 @@
 		 "投与時刻：" + drugdata[1].time);
    };
    $(function () {
-	   $("button").click(function(){
+	   $("#getJSON").click(function(){
 					$.getJSON("drugdata.json", getFunc);
 				});
 			});
-	   </script>
-	   <script type="text/javascript">
+
 $(function () {
 	 $("#kakunin").click(function(){
 					$.getJSON("drugdata.json", kakunin1);
@@ -52,7 +51,7 @@ alert("入力が間違っています");
 	
 </head>
 <body>
- <button>getJSON</button>
+ <input type="button" value="読み込む" id="getJSON">
    <div></div>
 	<form>
 	薬剤の用量を上から順に入力<br>
