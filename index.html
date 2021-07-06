@@ -20,7 +20,21 @@
 				});
 			});
 	</script>
-	 <script type="text/javascript">
+	
+   <style type="text/css">
+		<!--
+			div{
+				width:300px;
+				height:300px;
+				margin:10px;
+				border:solid 1px #666;
+			}
+		-->
+		</style>
+	
+</head>
+	 
+<script type="text/javascript">
 $(function () {
 	 $("#kakunin").click(function(){
 					$.getJSON("drugdata.json", kakunin1);
@@ -37,20 +51,8 @@ alert("正しく入力できています");
 alert("入力が間違っています");
     }
 }
-   </script>
-	
-   <style type="text/css">
-		<!--
-			div{
-				width:300px;
-				height:300px;
-				margin:10px;
-				border:solid 1px #666;
-			}
-		-->
-		</style>
-	
-</head>
+</script>
+
 <body>
  <input type="button" value="読み込む" id="getJSON">
    <div></div>
